@@ -2157,13 +2157,14 @@ p.text-muted {
 .pcoded-navbar {
   display: block;
   z-index: 1029;
-  position: fixed;
+  position: absolute;
+  padding-top: 67px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-box-shadow: 1px 0 20px 0 #3f4d67;
           box-shadow: 1px 0 20px 0 #3f4d67;
   width: 264px;
-  height: 100vh;
+  height: 100%;
   top: 0;
   background: #3f4d67;
   color: #a9b7d0;
@@ -2916,6 +2917,7 @@ p.text-muted {
   clear: both;
   float: unset;
   right: 0;
+  padding-top: 67px;
   margin-left: 264px;
   min-height: 100vh;
   -webkit-transition: all 0.3s ease-in-out;

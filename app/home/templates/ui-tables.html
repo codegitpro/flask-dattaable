@@ -6,171 +6,167 @@
 {% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
+	<div class="dashboard-user-content wallet-panel">
+		<div class="row">
+			<div class="col-xl-5">
+				<div class="bg-box wallet-balance">
+					<div class="title">Your Wallet Accounts</div>
+						<div class="balance-sheet-wrapper">
+						<ul>
+							<li class="bitcoin-method clearfix">
+								<a class="clearfix" href="#">
+									<span class="name font-fix"><img src="/static/assets/images/bitcoin2.png" alt=""> Bitcoin</span>
+									<span class="balance-inquery">
+										<span class="currency-title">0.0000 BTC</span>
+										<span class="total-currency">$0.00</span>
+									</span>
+								</a>
+							</li>
+						<div class="total-balance clearfix">
+							<div class="balance-title">Total Balance ≈</div>
+							<div class="balance-figure">$0.00</div>
+						</div>
+					</div> <!-- /.balance-sheet-wrapper -->
+					<ul class="button-group clearfix">
+						<li><button class="deposit-button" data-toggle="modal" data-target="#deposit-modal">Deposit</button></li>
+						<li><button class="withdraw-button theme-button" data-toggle="modal" data-target="#withdraw-modal"><span></span>Withdraw</button></li>
+					</ul>
+				</div> <!-- /.bg-box -->
 
-<div class="pcoded-content">
-    <div class="pcoded-inner-content">
-        <!-- [ breadcrumb ] start -->
-        <div class="page-header">
-            <div class="page-block">
-                <div class="row align-items-center">
-                    <div class="col-md-12">
-                        <div class="page-header-title">
-                            <h5 class="m-b-10">Bootstrap Basic Tables</h5>
-                        </div>
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
-                            <li class="breadcrumb-item"><a href="#!">Tables</a></li>
-                            <li class="breadcrumb-item"><a href="javascript:">Basic Tables</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [ breadcrumb ] end -->
-        <div class="main-body">
-            <div class="page-wrapper">
-                <!-- [ Main Content ] start -->
-                <div class="row">
-                    <!-- [ basic-table ] start -->
-                    <div class="col-xl-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Basic Table</h5>
-                                <span class="d-block m-t-5">use class <code>table</code> inside table element</span>
-                            </div>
-                            <div class="card-block table-border-style">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Username</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>Larry</td>
-                                                <td>the Bird</td>
-                                                <td>@twitter</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- [ basic-table ] end -->
+				<div class="bg-box cryptocurrency-prices">
+					<div class="clearfix">
+						<div class="title tooltip-holder">
+							Cryptocurrency Prices
+							<button type="button" class="help-button" data-toggle="tooltip" data-placement="top" title="" data-original-title="The amount you want to invest, you can always add funds to your investment at any time."><img src="/static/assets/images/info.png" alt=""></button>
+						</div>
+						<div class="live-status font-fix">live</div>
+					</div>
+						<ul class="currnecy-prices-list">
+							<li class="clearfix">
+								<div class="left-content">
+									<img src="/static/assets/images/bitcoin2.png" alt="">
+									<div class="name">
+										<span class="text">BTC</span>
+										<span class="value font-fix">Bitcoin</span>
+									</div>
+								</div>
+								<div class="right-content">
+									<span class="text">Price</span>
+									<span class="value font-fix">$6,370,62 <span class="current-rate down">0.30% <img src="/static/assets/images/down.png" alt=""></span></span>
+								</div>
+							</li>
+				</div> <!-- /.bg-box -->
+			</div> <!-- /.col- -->
 
-                    <!-- [ Hover-table ] start -->
-                    <div class="col-xl-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Hover Table</h5>
-                                <span class="d-block m-t-5">use class <code>table-hover</code> inside table element</span>
-                            </div>
-                            <div class="card-block table-border-style">
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Username</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>Larry</td>
-                                                <td>the Bird</td>
-                                                <td>@twitter</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- [ Hover-table ] end -->
+			<div class="col-xl-7">
+				<ul class="wallet-history clearfix">
+					<li>
+						<div class="inner-warpper">
+							<h6 class="inner-title">Deposits</h6>
+							<strong class="figure">$4,800.00</strong>
+						</div> <!-- /.inner-warpper -->
+					</li>
+					<li>
+						<div class="inner-warpper">
+							<h6 class="inner-title">Withdrawals</h6>
+							<strong class="figure">$0.00</strong>
+						</div> <!-- /.inner-warpper -->
+					</li>
+					<li>
+						<div class="inner-warpper">
+							<h6 class="inner-title">Pending withdrawal</h6>
+							<strong class="figure">$0.00</strong>
+						</div> <!-- /.inner-warpper -->
+					</li>
+				</ul> <!-- /.wallet-history -->
 
-                    <!-- [ stiped-table ] start -->
-                    <div class="col-xl-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Striped Table</h5>
-                                <span class="d-block m-t-5">use class <code>table-striped</code> inside table element</span>
-                            </div>
-                            <div class="card-block table-border-style">
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Username</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>Larry</td>
-                                                <td>the Bird</td>
-                                                <td>@twitter</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- [ stiped-table ] end -->
-                </div>
-                <!-- [ Main Content ] end -->
-            </div>
-        </div>
-    </div>
-</div>
+				<div class="transactions-history bg-box">
+					<div class="title tooltip-holder">
+						Pending Transactions
+						<button type="button" class="help-button" data-toggle="tooltip" data-placement="top" title="" data-original-title="The amount you want to invest, you can always add funds to your investment at any time."><img src="/static/assets/images/info.png" alt=""></button>
+					</div>
+
+					<div class="table-responsive transactions-list">
+						<table class="table">
+							<tbody>
+									<tr role="row" class="single-list">
+											<td class="time font-fix">
+										<div class="month">Aug</div>
+										<div class="date">02</div>
+										</td>
+										<td>
+											<div class="heading font-fix">Withdraw to Bitcoin</div>
+												<div class="value">1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX</div>
+										</td>
+										<td><button class="cancel-transactions">Cancel</button></td>
+										<td>
+											<div class="heading font-fix">-1.0000 BTC</div>
+												<div class="value">-$6509.30</div>
+										</td>
+									</tr>
+							</tbody>
+						</table>
+					</div> <!-- /.table-data -->
+				</div> <!-- /.transactions-history -->
+				<div class="transactions-history completed-transactions-history bg-box">
+					<div class="title tooltip-holder">
+						Completed Transactions
+						<button type="button" class="help-button" data-toggle="tooltip" data-placement="top" title="" data-original-title="The amount you want to invest, you can always add funds to your investment at any time."><img src="/static/assets/images/info.png" alt=""></button>
+					</div>
+
+					<div class="table-responsive transactions-list">
+						<table class="table">
+							<tbody>
+									<tr role="row" class="single-list">
+											<td class="time font-fix">
+										<div class="month">jul</div>
+										<div class="date">28</div>
+										</td>
+										<td>
+											<div class="heading font-fix">Withdraw to Bitcoin</div>
+												<div class="value">1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX</div>
+										</td>
+										<td>
+											<div class="heading font-fix">-0.010441 BTC</div>
+												<div class="value">-$28.10</div>
+										</td>
+									</tr>
+									<tr role="row" class="single-list">
+											<td class="time font-fix">
+										<div class="month">jul</div>
+										<div class="date">20</div>
+										</td>
+										<td>
+											<div class="heading font-fix">Deposit to Account</div>
+												<div class="value">Using Bitcoin</div>
+										</td>
+										<td>
+											<div class="heading font-fix">-0.010441 BTC</div>
+												<div class="value">-$28.10</div>
+										</td>
+									</tr>
+									<tr role="row" class="single-list">
+											<td class="time font-fix">
+										<div class="month">aug</div>
+										<div class="date">28</div>
+										</td>
+										<td>
+											<div class="heading font-fix">Investment Deposit</div>
+												<div class="value">Deposit to [Name of Investment]</div>
+										</td>
+										<td>
+											<div class="heading font-fix">-0.010441 BTC</div>
+												<div class="value">-$28.10</div>
+										</td>
+									</tr>
+							</tbody>
+						</table>
+					</div> <!-- /.table-data -->
+				</div> <!-- /.transactions-history -->
+			</div>
+		</div> <!-- /.row -->
+		
+	</div>
 
 {% endblock content %}
 

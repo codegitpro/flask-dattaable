@@ -193,19 +193,21 @@ def contract():
 @blueprint.route('/login', methods=['GET', 'POST'])
 def login():
     login_form = LoginForm(request.form)
+    
     if 'login' in request.form:
-        
+        print('loginrequestform')
         # read form data
         username = request.form['username']
         password = request.form['password']
 
         # Locate user
         user = User.query.filter_by(username=username).first()
-        
+        print('formpassword, userpassword', request.form['password'], user)
         # Check the password
         if user and verify_pass( password, user.password):
-
+            
             login_user(user)
+            print('loginsuceess')
             return redirect(url_for('base_blueprint.route_default'))
 
         # Something (user or pass) is not ok

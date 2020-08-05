@@ -28,6 +28,10 @@
     <!-- vendor css -->
     <link rel="stylesheet" href="/static/assets/css/style.css">
 
+     <link rel="stylesheet" href="/static/assets/css/style-external.css">
+
+      <link rel="stylesheet" href="/static/assets/css/responsive.css">
+
     <!-- Specific CSS goes HERE -->
     {% block stylesheets %}{% endblock stylesheets %}
 
@@ -72,6 +76,8 @@
 
         </div>
     </div>
+
+    {% include 'includes/modal.html' %}
 
     {% include 'includes/scripts.html' %}
 

@@ -1,0 +1,948 @@
+<!-- Payouts Modal -->
+			<div class="modal fade" id="payout-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			  	<div class="modal-dialog" role="document">
+			    	<div class="modal-content">
+				      	<div class="theme-modal-header">
+					      	<h3 class="title font-fix">[Name of Investment] - Payouts</h3>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+				      	</div>
+				      	<div class="modal-body">
+					        <div class="next-payout-box">
+					        	<img src="/static/assets/images/icon-1.png" alt="" class="payout-icon">
+					        	<div class="text">Next Payout</div>
+					        	<div class="date">27 August, 2018</div>
+					        </div>
+
+					        <div class="payout-history">
+					        	<ul class="clearfix">
+					        		<li class="list-item">
+					        			<div class="title">Status</div>
+					        			<div class="value font-fix payment-status">Paid</div>
+					        		</li>
+					        		<li class="list-item">
+					        			<div class="title">Reference</div>
+					        			<div class="value font-fix">6gnj37</div>
+					        		</li>
+					        		<li class="list-item">
+					        			<div class="title">Paid out</div>
+					        			<div class="value font-fix">03.01.2017</div>
+					        		</li>
+					        		<li class="list-item">
+					        			<div class="title">Amount</div>
+					        			<div class="value font-fix payout-amount">$4.35</div>
+					        		</li>
+					        	</ul>
+					        </div>
+					        <div class="payout-history">
+					        	<ul class="clearfix">
+					        		<li class="list-item">
+					        			<div class="title">Status</div>
+					        			<div class="value font-fix payment-status">Paid</div>
+					        		</li>
+					        		<li class="list-item">
+					        			<div class="title">Reference</div>
+					        			<div class="value font-fix">6gnj37</div>
+					        		</li>
+					        		<li class="list-item">
+					        			<div class="title">Paid out</div>
+					        			<div class="value font-fix">03.01.2017</div>
+					        		</li>
+					        		<li class="list-item">
+					        			<div class="title">Amount</div>
+					        			<div class="value font-fix payout-amount">$4.35</div>
+					        		</li>
+					        	</ul>
+					        </div>
+					        <div class="payout-history">
+					        	<ul class="clearfix">
+					        		<li class="list-item">
+					        			<div class="title">Status</div>
+					        			<div class="value font-fix payment-status">Paid</div>
+					        		</li>
+					        		<li class="list-item">
+					        			<div class="title">Reference</div>
+					        			<div class="value font-fix">6gnj37</div>
+					        		</li>
+					        		<li class="list-item">
+					        			<div class="title">Paid out</div>
+					        			<div class="value font-fix">03.01.2017</div>
+					        		</li>
+					        		<li class="list-item">
+					        			<div class="title">Amount</div>
+					        			<div class="value font-fix payout-amount">$4.35</div>
+					        		</li>
+					        	</ul>
+					        </div>
+				      	</div>
+			    	</div>
+			  	</div>
+			</div> <!-- /#payout-modal -->
+
+
+
+			<!-- Investment  Modal -->
+			<div class="modal fade" id="investment-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			  	<div class="modal-dialog" role="document">
+			    	<div class="modal-content">
+				    	<div class="tabs-wrap">
+							<ul class="nav nav-tabs modal-navs" id="myTab" role="tablist">
+								<li class="nav-item">
+								  <a class="nav-link active" id="invest-name-tab" data-toggle="tab" href="#invest-name" role="tab" aria-controls="invest-name" aria-selected="true"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="invest-amount-tab" data-toggle="tab" href="#invest-amount" role="tab" aria-controls="invest-amount" aria-selected="false"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="invest-return-tab" data-toggle="tab" href="#invest-return" role="tab" aria-controls="invest-return" aria-selected="false"></a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="invest-name" role="tabpanel" aria-labelledby="invest-name-tab">
+									<div class="theme-modal-header">
+								      	<h3 class="title font-fix">Edit your investment</h3>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>					
+								    </div>
+
+								    <div class="modal-body">
+				        				<form action="#">
+				        					<div class="single-input-wrapper">
+					        					<h6 class="title">Investment name</h6>
+					        					<input type="text" placeholder="[Investment Name]">
+					        				</div> <!-- /.single-input-wrapper -->
+					        				<div class="single-input-wrapper">
+					        					<h6 class="title">Payout Frequency <button type="button" class="help-button" data-toggle="tooltip" data-placement="top" title="The amount you want to invest, you can always add funds to your investment at any time."><img src="/static/assets/images/info.png" alt=""></button></h6>
+					        					<select class="theme-select-dropdown">
+													<option value="Value 1">At the end of investment period</option>
+													<option value="Value 1">Weekly ( Every Week)</option>
+													<option value="Value 1">Twice a Month ( 1st and the 15th)</option>
+													<option value="Value 1">Monthly (1st business day of the month)</option>
+												</select>
+					        				</div> <!-- /.single-input-wrapper -->
+					        				<div class="single-input-wrapper">
+					        					<h6 class="title">Investment timeframe <button type="button" class="help-button" data-toggle="tooltip" data-placement="top" title="The amount you want to invest, you can always add funds to your investment at any time."><img src="/static/assets/images/info.png" alt=""></button></h6>
+					        					<input type="text" placeholder="Investment End Date: 24/10/2018" class="end-date" disabled="">
+					        					<select class="theme-select-dropdown">
+													<option value="Value 1">Extend timeframe of your investment</option>
+													<option value="Value 1">+ 1 Month</option>
+													<option value="Value 1">+ 2 Months</option>
+													<option value="Value 1">+ 3 Months</option>
+													<option value="Value 1">+ etc etc etc until 24 months </option>
+												</select>
+					        				</div> <!-- /.single-input-wrapper -->
+
+					        				<a href="#" class="add-funds-button continue-button">Add funds to your investment</a>
+
+					        				<div class="bottom-button-group clearfix">
+					        					<ul class="clearfix">
+					        						<li><button class="save-action">Save</button></li>
+					        						<li><button class="delete-action">Delete</button></li>
+					        						<li><button class="cancel-action" data-dismiss="modal" aria-label="Close">Cancel</button></li>
+					        					</ul>
+					        				</div>
+				        				</form>
+				      				</div> <!-- /.modal-body -->
+								</div> <!-- /.tab-pane -->
+
+
+
+								<div class="tab-pane fade" id="invest-amount" role="tabpanel" aria-labelledby="invest-amount-tab">
+								  	<div class="theme-modal-header">
+								      	<h3 class="title font-fix"><a class="back-button"><img src="/static/assets/images/left-arrow.png" alt=""></a> How much would you like to invest?</h3>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								    </div>
+
+								    <div class="modal-body invest-amount-details">
+				        				<div class="input-box-wrapper">
+				        					<h6 class="title">amount</h6>
+				        					<div class="input-group-wrapper main-currency">
+				        						<div class="currency-icon">$</div>
+				        						<input type="number" value="1000" min="50">
+				        						<div class="currency-name">USD</div>
+				        					</div>
+				        					<div class="input-group-wrapper">
+				        						<div class="cryptocurrency-amount">0.561335688</div>
+				        						<select class="theme-select-dropdown">
+													<option value="Value 1">BTC</option>
+													<option value="Value 1">Eth</option>
+													<option value="Value 1">Ltc</option>
+												</select>
+				        					</div>
+				        					<div class="invest-amount-condition">Cryonik requires a $50 minimum investment</div>
+				        				</div> <!-- /.input-box-wrapper -->
+				        				<div class="input-box-wrapper">
+				        					<h6 class="title">Payment Method</h6>
+				        					<ul class="payment-method-one">
+				        						<li class="clearfix payment-header list-item">
+				        							<div class="title-text font-fix">Cryonik Wallet: $100.27</div>
+				        							<div class="payment-time">Instant</div>
+				        						</li>
+				        						<li class="clearfix payment-action-list list-item">
+				        							<div class="currency-name font-fix">
+				        								<img src="/static/assets/images/bitcoin2.png" alt=""> Bitcoin
+				        							</div>
+				        							<div class="payment-time">Instant</div>
+				        						</li>
+				        						<li class="clearfix payment-action-list list-item">
+				        							<div class="currency-name font-fix">
+				        								<img src="/static/assets/images/ethereum2.png" alt=""> Ethereum
+				        							</div>
+				        							<div class="payment-time">Instant</div>
+				        						</li>
+				        						<li class="clearfix payment-action-list list-item">
+				        							<div class="currency-name font-fix">
+				        								<img src="/static/assets/images/litecoin2.png" alt=""> Litecoin
+				        							</div>
+				        							<div class="payment-time">Instant</div>
+				        						</li>
+				        					</ul>
+				        				</div> <!-- /.input-box-wrapper -->
+				        				<a href="#" class="add-funds-button continue-button">Add funds to your investment</a>
+				      				</div> <!-- /.modal-body -->
+								</div> <!-- /.tab-pane -->
+
+								<div class="tab-pane fade" id="invest-return" role="tabpanel" aria-labelledby="invest-return-tab">
+									<div class="theme-modal-header">
+								      	<h3 class="title font-fix"><a class="back-button"><img src="/static/assets/images/left-arrow.png" alt=""></a> See how much your coins can grow</h3>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								    </div>
+
+								    <div class="invest-vs-deposit clearfix">
+								    	<div class="previous-invest">
+								    		<div class="title">Previously invested</div>
+								    		<div class="amount font-fix">$100.00</div>
+								    	</div>
+								    	<div class="new-deposit">
+								    		<div class="title">new deposit</div>
+								    		<div class="amount font-fix">$1000.00</div>
+								    	</div>
+								    </div> <!-- /.invest-vs-deposit -->
+
+								    <div class="modal-body invest-amount-details">
+				        				<div class="input-box-wrapper">
+				        					<h6 class="title">New total invested amount</h6>
+				        					<div class="input-group-wrapper main-currency">
+				        						<div class="currency-icon">$</div>
+				        						<input type="number" value="1000" min="50">
+				        						<div class="currency-name">USD</div>
+				        					</div>
+				        				</div> <!-- /.input-box-wrapper -->
+				        				<div class="total-return-figure">
+											<h4 class="title">Expected return</h4>
+											<span class="return-value">$<strong class="total-return-value usd-return">1500</strong></span>
+										</div> <!-- /.total-return-figure -->
+
+										<div class="invest-time-condition">You can add new funds to your investment at any time.</div>
+				        				<a href="#" class="add-funds-button">Confirm</a>
+				      				</div> <!-- /.modal-body -->
+								</div> <!-- /.tab-pane -->
+							</div> <!-- /.tab-content -->
+						</div> <!-- /.tabs-wrap -->
+			    	</div> <!-- /.modal-content -->
+			  	</div> <!-- /.modal-dialog -->
+			</div> <!-- /#investment-modal -->
+
+
+
+			<!-- New Investment  Modal -->
+			<div class="modal fade new-invest-modal" id="new-investment-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			  	<div class="modal-dialog" role="document">
+			    	<div class="modal-content">
+				    	<div class="tabs-wrap">
+							<ul class="nav nav-tabs modal-navs-two" id="myTabTwo" role="tablist">
+								<li class="nav-item">
+								  <a class="nav-link active" id="start-invest-tab" data-toggle="tab" href="#start-invest" role="tab" aria-controls="start-invest" aria-selected="true"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="new-invest-name-tab" data-toggle="tab" href="#new-invest-name" role="tab" aria-controls="new-invest-name" aria-selected="false"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="invest-time-frame-tab" data-toggle="tab" href="#invest-time-frame" role="tab" aria-controls="invest-time-frame" aria-selected="false"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="invest-payout-frequency-tab" data-toggle="tab" href="#invest-payout-frequency" role="tab" aria-controls="invest-payout-frequency" aria-selected="false"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="new-invest-amount-tab" data-toggle="tab" href="#new-invest-amount" role="tab" aria-controls="new-invest-amount" aria-selected="false"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="invest-payment-method-tab" data-toggle="tab" href="#invest-payment-method" role="tab" aria-controls="invest-payment-method" aria-selected="false"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="final-check-tab" data-toggle="tab" href="#final-check" role="tab" aria-controls="final-check" aria-selected="false"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="new-invest-ready-tab" data-toggle="tab" href="#new-invest-ready" role="tab" aria-controls="new-invest-ready" aria-selected="false"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="cancel-invest-tab" data-toggle="tab" href="#cancel-invest" role="tab" aria-controls="cancel-invest" aria-selected="false"></a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContentTwo">
+								<div class="tab-pane fade show active default-text-wrapper" id="start-invest" role="tabpanel" aria-labelledby="start-invest-tab">
+									<div class="theme-modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>					
+								    </div>
+
+								    <div class="modal-body">
+				        				<img src="/static/assets/images/coins2.png" alt="" class="coin">
+				        				<h4 class="title font-fix">Create a Bitcoin Collatoral Contract with Bond!</h4>
+				        				<p>Its never been so easy to setup a new investment, in just 3 minutes, we’ll put your coins to work harder for you. Enjoy the freedom of take care of yourself.</p>
+				        				<a href="#" class="theme-button continue-button-two"><span></span>Get Started</a>
+				      				</div> <!-- /.modal-body -->
+								</div> <!-- /.tab-pane -->
+
+
+								<div class="tab-pane fade" id="new-invest-name" role="tabpanel" aria-labelledby="new-invest-name-tab">
+								  	<div class="theme-modal-header">
+								      	<div class="title font-fix"><a class="back-button-two"><img src="/static/assets/images/left-arrow.png" alt=""></a></div>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								    </div>
+
+								    <div class="main-container clearfix">
+								    	<div class="details-option">
+								    		<div class="main-content-wrapper">
+								    			<form action="#" class="invest-name-form">
+								    				<h4 class="main-title font-fix">Give your contract a name</h4>
+								    				<input type="text" placeholder="e.g. My Cryonik Investment">
+								    				<a href="#" class="theme-button continue-button-two"><span></span>Continue</a>
+								    			</form>
+								    		</div> <!-- /.main-content-wrapper -->
+								    	</div> <!-- /.details-option -->
+
+								    	<div class="modal-sidebar">
+								    		<h6 class="sidebar-title font-fix">Investment Summary</h6>
+
+								    		<div class="condition">You can edit your invetsment by going back</div>
+								    	</div> <!-- /.modal-sidebar -->
+								    </div> <!-- /.main-container -->
+								</div> <!-- /.tab-pane -->
+
+								<div class="tab-pane fade" id="invest-time-frame" role="tabpanel" aria-labelledby="invest-time-frame-tab">
+									<div class="theme-modal-header">
+										<div class="title font-fix"><a class="back-button-two"><img src="/static/assets/images/left-arrow.png" alt=""></a></div>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								    </div>
+
+								    <div class="main-container clearfix">
+								    	<div class="details-option">
+								    		<div class="main-content-wrapper">
+								    			<form action="#" class="invest-time-form">
+								    				<h4 class="main-title font-fix">Investment Timeframe</h4>
+								    				<p class="sub-info">Your investment timeframe is how long you want to invest and keep your coins growing.</p>
+													<input type="text" class="range-time" value="">
+													<p class="invest-end-date">Investment End Date: 24/11/2018</p>
+													<a href="#" class="theme-button continue-button-two"><span></span>Continue</a>
+								    			</form>
+								    			
+								    		</div> <!-- /.main-content-wrapper -->
+								    	</div> <!-- /.details-option -->
+
+								    	<div class="modal-sidebar">
+								    		<h6 class="sidebar-title font-fix">Investment Summary</h6>
+								    		<ul>
+								    			<li class="sidebar-action-list">
+								    				<h6>Investment Name</h6>
+								    				<h5 class="font-fix">My Cryonik Investment</h5>
+								    			</li>
+								    		</ul>
+								    		<div class="condition">You can edit your invetsment by going back</div>
+								    	</div> <!-- /.modal-sidebar -->
+								    </div> <!-- /.main-container -->
+								</div> <!-- /.tab-pane -->
+
+								<div class="tab-pane fade" id="invest-payout-frequency" role="tabpanel" aria-labelledby="invest-payout-frequency-tab">
+									<div class="theme-modal-header">
+										<div class="title font-fix"><a class="back-button-two"><img src="/static/assets/images/left-arrow.png" alt=""></a></div>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								    </div>
+
+								    <div class="main-container clearfix">
+								    	<div class="details-option">
+								    		<div class="main-content-wrapper">
+								    			<form action="#" class="invest-payout-form">
+								    				<h4 class="main-title font-fix">Payout Frequency</h4>
+								    				<p class="sub-info">This option will tell us how often you want us <br>to transfer the collected coins to your account.</p>
+
+								    				<ul class="clearfix payout-frequency-list">
+								    					<li>
+								    						<input type="checkbox" id="weekly" class="pay-check">
+								    						<label for="weekly">
+								    							<span class="font-fix lTitle">Weekly</span>
+								    							<span>(Every Week)</span>
+								    						</label>
+								    					</li>
+								    					<li>
+								    						<input type="checkbox" id="tw-month" class="pay-check">
+								    						<label for="tw-month">
+								    							<span class="font-fix lTitle">Twice a Month</span>
+								    							<span>(1st and the 15th)</span>
+								    						</label>
+								    					</li>
+								    					<li>
+								    						<input type="checkbox" id="monthly" class="pay-check">
+								    						<label for="monthly">
+								    							<span class="font-fix lTitle">Monthly</span>
+								    							<span>(1st business day of <br>the month)</span>
+								    						</label>
+								    					</li>
+								    					<li>
+								    						<input type="checkbox" id="at-the-end" class="pay-check">
+								    						<label for="at-the-end">
+								    							<span class="font-fix lTitle">At the end of <br>investment period.</span>
+								    							<span>(Investment End Date: 00/00/00)</span>
+								    							<span class="return-bonus">+5% Return</span>
+								    						</label>
+								    					</li>
+								    				</ul>
+													
+													<a href="#" class="theme-button continue-button-two"><span></span>Continue</a>
+													<p>Please note that you are not able to select specific dates to be <br>paid out, only the interval period between payouts.</p>
+								    			</form>
+								    			
+								    		</div> <!-- /.main-content-wrapper -->
+								    	</div> <!-- /.details-option -->
+
+								    	<div class="modal-sidebar">
+								    		<h6 class="sidebar-title font-fix">Create a Contract</h6>
+								    		<ul>
+								    			<li class="sidebar-action-list">
+								    				<h6>Investment Name</h6>
+								    				<h5 class="font-fix"></h5>
+								    			</li>
+								    			<li class="sidebar-action-list">
+								    				<h6>Investment Timeframe</h6>
+								    				<h5 class="font-fix"></h5>
+								    				<p>Investment</p>
+								    			</li>
+								    		</ul>
+								    		<div class="condition">You can edit your invetsment by going back</div>
+								    	</div> <!-- /.modal-sidebar -->
+								    </div> <!-- /.main-container -->
+								</div> <!-- /.tab-pane -->
+
+								<div class="tab-pane fade" id="new-invest-amount" role="tabpanel" aria-labelledby="new-invest-amount-tab">
+									<div class="theme-modal-header">
+										<div class="title font-fix"><a class="back-button-two"><img src="/static/assets/images/left-arrow.png" alt=""></a></div>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								    </div>
+
+								    <div class="main-container clearfix">
+								    	<div class="details-option">
+								    		<div class="main-content-wrapper">
+								    			<h4 class="main-title font-fix">How much would you like to invest?</h4>
+								    			<form action="#" class="invest-amount-form">
+								    				<div class="invest-amount-details">
+								        				<div class="input-box-wrapper">
+								        					<div class="input-group-wrapper main-currency">
+								        						<div class="currency-icon">$</div>
+								        						<input type="number" value="1000" min="50">
+								        						<div class="currency-name">USD</div>
+								        					</div>
+								        					<div class="input-group-wrapper">
+								        						<div class="cryptocurrency-amount">0.561335688</div>
+								        						<select class="theme-select-dropdown">
+																	<option value="Value 1">BTC</option>
+																	<option value="Value 1">Eth</option>
+																	<option value="Value 1">Ltc</option>
+																</select>
+								        					</div>
+								        					<div class="invest-amount-condition">Cryonik requires a $50 minimum investment</div>
+								        				</div> <!-- /.input-box-wrapper -->
+
+								        				<div class="total-return-figure">
+															<h4 class="title">Expected return</h4>
+															<span class="return-value">$<strong class="total-return-value usd-return">1500</strong></span>
+														</div>
+
+														<ul class="clearfix button-group">
+															<li><a href="#" class="theme-button continue-button-two"><span></span>Continue</a></li>
+															<li>You can add new funds to your investment at any time.</li>
+														</ul>
+								      				</div> <!-- /.invest-amount-details -->
+								    			</form>
+								    		</div> <!-- /.main-content-wrapper -->
+								    	</div> <!-- /.details-option -->
+
+								    	<div class="modal-sidebar">
+								    		<h6 class="sidebar-title font-fix">Investment Summary</h6>
+								    		<ul>
+								    			<li class="sidebar-action-list">
+								    				<h6>Investment Name</h6>
+								    				<h5 class="font-fix">My Cryonik Investment</h5>
+								    			</li>
+								    			<li class="sidebar-action-list">
+								    				<h6>Investment Timeframe</h6>
+								    				<h5 class="font-fix">3 Months</h5>
+								    				<p>Investment End Date: 24/11/2018</p>
+								    			</li>
+								    			<li class="sidebar-action-list">
+								    				<h6>Payout Frequency</h6>
+								    				<h5 class="font-fix">Monthly</h5>
+								    				<p>1st business day of the month</p>
+								    			</li>
+								    		</ul>
+								    		<div class="condition">You can edit your invetsment by going back</div>
+								    	</div> <!-- /.modal-sidebar -->
+								    </div> <!-- /.main-container -->
+								</div> <!-- /.tab-pane -->
+
+								<div class="tab-pane fade" id="invest-payment-method" role="tabpanel" aria-labelledby="invest-payment-method-tab">
+									<div class="theme-modal-header">
+										<div class="title font-fix"><a class="back-button-two"><img src="/static/assets/images/left-arrow.png" alt=""></a></div>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								    </div>
+
+								    <div class="main-container clearfix">
+								    	<div class="details-option">
+								    		<div class="main-content-wrapper">
+								    			<h4 class="main-title font-fix">Choose your payment method</h4>
+								    			<p class="sub-info">With Cryonik, you can use your account balance, Bitcoin, Ethereum and Litecoin.</p>
+								    			<form action="#" class="invest-payment-form">
+								    				<div class="invest-amount-details">
+								        				<div class="input-box-wrapper">
+								        					<ul class="payment-method-one">
+								        						<li class="clearfix payment-header list-item">
+								        							<div class="title-text font-fix">Cryonik Wallet: $100.27</div>
+								        							<div class="payment-time">Instant</div>
+								        						</li>
+								        						<li class="clearfix payment-action-list list-item">
+								        							<div class="currency-name font-fix">
+								        								<img src="/static/assets/images/bitcoin2.png" alt=""> Bitcoin
+								        							</div>
+								        							<div class="payment-time">Instant</div>
+								        						</li>
+								        						<li class="clearfix payment-action-list list-item">
+								        							<div class="currency-name font-fix">
+								        								<img src="/static/assets/images/ethereum2.png" alt=""> Ethereum
+								        							</div>
+								        							<div class="payment-time">Instant</div>
+								        						</li>
+								        						<li class="clearfix payment-action-list list-item">
+								        							<div class="currency-name font-fix">
+								        								<img src="/static/assets/images/litecoin2.png" alt=""> Litecoin
+								        							</div>
+								        							<div class="payment-time">Instant</div>
+								        						</li>
+								        					</ul>
+								        				</div> <!-- /.input-box-wrapper -->
+								        				<a href="#" class="theme-button continue-button-two"><span></span>Continue</a>
+								      				</div> <!-- /.invest-amount-details -->
+								    			</form>
+								    		</div> <!-- /.main-content-wrapper -->
+								    	</div> <!-- /.details-option -->
+
+								    	<div class="modal-sidebar">
+								    		<h6 class="sidebar-title font-fix">Investment Summary</h6>
+								    		<ul>
+								    			<li class="sidebar-action-list">
+								    				<h6>Investment Name</h6>
+								    				<h5 class="font-fix">My Cryonik Investment</h5>
+								    			</li>
+								    			<li class="sidebar-action-list">
+								    				<h6>Investment Timeframe</h6>
+								    				<h5 class="font-fix">3 Months</h5>
+								    				<p>Investment End Date: 24/11/2018</p>
+								    			</li>
+								    			<li class="sidebar-action-list">
+								    				<h6>Payout Frequency</h6>
+								    				<h5 class="font-fix">Monthly</h5>
+								    				<p>1st business day of the month</p>
+								    			</li>
+								    			<li class="sidebar-action-list">
+								    				<h6>Amount</h6>
+								    				<h5 class="font-fix">$1000.00</h5>
+								    			</li>
+								    		</ul>
+								    		<div class="condition">You can edit your invetsment by going back</div>
+								    	</div> <!-- /.modal-sidebar -->
+								    </div> <!-- /.main-container -->
+								</div> <!-- /.tab-pane -->
+
+								<div class="tab-pane fade" id="final-check" role="tabpanel" aria-labelledby="final-check-tab">
+									<div class="theme-modal-header">
+										<div class="title font-fix"><a class="back-button-two"><img src="/static/assets/images/left-arrow.png" alt=""></a></div>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								    </div>
+
+								    <div class="modal-body">
+				        				<div class="main-wrapper">
+				        					<h4 class="main-title">A few things to double-check</h4>
+				        					<ul class="final-check-list clearfix row">
+				        						<li class="list-item col-sm-6">
+				        							<div>
+				        								<h6>Investment Name</h6>
+								    					<h5 class="font-fix">My Cryonik Investment</h5>
+				        							</div>
+				        						</li>
+				        						<li class="list-item col-sm-6">
+				        							<div>
+				        								<h6>Investment Timeframe</h6>
+								    					<h5 class="font-fix">3 Months</h5>
+								    					<p>Investment End Date: 24/11/2018</p>
+				        							</div>
+				        						</li>
+				        						<li class="list-item col-sm-6">
+				        							<div>
+				        								<h6>Payout Frequency</h6>
+								    					<h5 class="font-fix">Monthly</h5>
+								    					<p>1st business day of the month</p>
+				        							</div>
+				        						</li>
+				        						<li class="list-item col-sm-6">
+				        							<div>
+				        								<h6>Amount</h6>
+								    					<h5 class="font-fix">$1000.00</h5>
+				        							</div>
+				        						</li>
+				        					</ul>
+
+				        					<ul class="button-group clearfix">
+				        						<li><a href="#" class="edit-button">Edit</a></li>
+				        						<li><a href="#" class="theme-button continue-button-two"><span></span>Confirm</a></li>
+				        					</ul>
+				        					<p>You can add new funds to your investment at any time.</p>
+				        				</div>
+				      				</div> <!-- /.modal-body -->
+								</div> <!-- /.tab-pane -->
+
+								<div class="tab-pane fade default-text-wrapper" id="new-invest-ready" role="tabpanel" aria-labelledby="new-invest-ready-tab">
+									<div class="theme-modal-header">
+										<h3 class="title font-fix"><a class="back-button-two"><img src="/static/assets/images/left-arrow.png" alt=""></a> &nbsp;</h3>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>					
+								    </div>
+
+								    <div class="modal-body">
+				        				<img src="/static/assets/images/coins2.png" alt="" class="coin">
+				        				<h4 class="title font-fix">Your Investment is ready!</h4>
+				        				<p>$1000 has been invested for the 3 month period. You can add new funds or edit your investment at any time in <a href="#">Investments</a>.</p>
+				        				<ul class="button-group clearfix">
+				        					<li><a href="#" class="certificate-button">Investment Certificate</a></li>
+				        					<li><a href="#" class="theme-button continue-button-two"><span></span>Investments</a></li>
+				        				</ul>
+				      				</div> <!-- /.modal-body -->
+								</div> <!-- /.tab-pane -->
+
+								<div class="tab-pane fade default-text-wrapper" id="cancel-invest" role="tabpanel" aria-labelledby="cancel-invest-tab">
+									<div class="theme-modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>					
+								    </div>
+
+								    <div class="modal-body">
+								    	<img src="/static/assets/images/coins3.png" alt="" class="coin">
+				        				<h4 class="title font-fix">Cancel this Investment?</h4>
+				        				<p>Your investment looks perfect, save it and invest later. </p>
+				        				<ul class="button-group clearfix">
+				        					<li><a href="#" class="cancel-button">Cancel</a></li>
+				        					<li><a href="#" class="theme-button"><span></span>Save</a></li>
+				        				</ul>
+				      				</div> <!-- /.modal-body -->
+								</div> <!-- /.tab-pane -->
+							</div> <!-- /.tab-content -->
+						</div> <!-- /.tabs-wrap -->
+			    	</div> <!-- /.modal-content -->
+			  	</div> <!-- /.modal-dialog -->
+			</div> <!-- /#new-investment-modal -->
+
+			<!-- Deposit  Modal -->
+			<div class="modal fade wallet-page-modal" id="deposit-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			  	<div class="modal-dialog" role="document">
+			    	<div class="modal-content">
+				    	<div class="tabs-wrap">
+							<ul class="nav nav-tabs modal-navs" id="myTab" role="tablist">
+								<li class="nav-item">
+								  <a class="nav-link active" id="wallet-info-tab" data-toggle="tab" href="#wallet-info" role="tab" aria-controls="wallet-info" aria-selected="true"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="wallet-paymet-success-tab" data-toggle="tab" href="#wallet-paymet-success" role="tab" aria-controls="wallet-paymet-success" aria-selected="false"></a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="wallet-info" role="tabpanel" aria-labelledby="wallet-info-tab">
+									<div class="theme-modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>					
+								    </div>
+
+								    <div class="main-container clearfix">
+								    	<div class="details-option">
+								    		<h3 class="main-title">Payment Method</h3>
+								    		<form action="#">
+								    			<ul class="wallet-payment-method clearfix">
+													<li class="single-checkbox">
+														<input type="checkbox" id="pay-bitcoin" class="pay-check">
+														<label for="pay-bitcoin">
+															<img src="/static/assets/images/bitcoin2.png" alt="">
+															<span class="payment-currnecy font-fix">Bitcoin</span>
+														</label>
+													</li>
+													<li class="single-checkbox">
+														<input type="checkbox" id="pay-ethereum" class="pay-check">
+														<label for="pay-ethereum">
+															<img src="/static/assets/images/ethereum2.png" alt="">
+															<span class="payment-currnecy font-fix">Ethereum</span>
+														</label>
+													</li>
+													<li class="single-checkbox">
+														<input type="checkbox" id="pay-litecoin" class="pay-check">
+														<label for="pay-litecoin">
+															<img src="/static/assets/images/litecoin2.png" alt="">
+															<span class="payment-currnecy font-fix">Litecoin</span>
+														</label>
+													</li>
+												</ul>
+
+												<div class="wallet-amount payment-amount">
+													<h3 class="main-title">Amount</h3>
+													<div class="input-group-wrapper main-currency">
+														<input type="checkbox" class="cur-check">
+						        						<label for="main-cur">
+						        							<span class="currency-icon">$</span>
+							        						<input type="number" value="1000" min="50" id="main-cur">
+							        						<span class="currency-name">USD</span>
+						        						</label>
+						        					</div>
+						        					<div class="input-group-wrapper">
+						        						<input type="checkbox" class="cur-check">
+						        						<label for="crypto-cur">
+						        							<input type="number" value="0.561335688" min="50" class="cryptocurrency-amount" id="crypto-cur">
+						        							<span class="currency-name">BTC</span>
+						        						</label>
+						        					</div>
+												</div> <!-- /.wallet-amount -->
+
+												<a href="#" class="theme-button continue-button"><span></span>Pay with Bitcoin - $1.000</a>
+								    		</form>
+								    	</div> <!-- /.details-option -->
+
+
+								    	<div class="modal-sidebar">
+								    		<div class="summary-content">
+								    			<h4 class="summary-title font-fix">Deposit Summary</h4>
+								    			<div class="crypto-balance font-fix">0.561335688 BTC</div>
+								    			<div class="main-balance font-fix">$1000.00</div>
+
+								    			<ul>
+								    				<li class="list-item">
+								    					<div class="sidebar-title">Payment Method</div>
+								    					<div class="value font-fix"><img src="/static/assets/images/bitcoin2.png" alt=""> Bitcoin</div>
+								    				</li>
+								    				<li class="list-item">
+								    					<div class="sidebar-title">Deposit To</div>
+								    					<div class="value font-fix">Cryonik Wallet</div>
+								    				</li>
+								    				<li class="list-item">
+								    					<div class="sidebar-title">Processing Time</div>
+								    					<div class="value font-fix">Instant</div>
+								    				</li>
+								    			</ul>
+								    			<button type="button" class="help-button" data-toggle="tooltip" data-placement="top" title="" data-original-title="The amount you want to invest, you can always add funds to your investment at any time."><img src="/static/assets/images/help.png" alt="">Deposit Help</button>
+								    		</div> <!-- /.summary-content -->
+								    	</div> <!-- /.modal-sidebar -->
+								    </div> <!-- /.main-container -->
+								</div> <!-- /.tab-pane -->
+
+								<div class="tab-pane fade" id="wallet-paymet-success" role="tabpanel" aria-labelledby="wallet-paymet-success-tab">
+								    <div class="success-alert-wrapper">
+								    	<img src="/static/assets/images/success.png" alt="">
+								    	<h3 class="title">Success!</h3>
+								    	<p>$1000 ≈ 0.561335688 BTC will be available in your BTC wallet instantly. Sometimes it may take a few moments.</p>
+								    	<button class="theme-button" data-dismiss="modal" aria-label="Close"><span></span>Your wallet</button>
+								    </div>
+								</div> <!-- /.tab-pane -->
+							</div> <!-- /.tab-content -->
+						</div> <!-- /.tabs-wrap -->
+			    	</div> <!-- /.modal-content -->
+			  	</div> <!-- /.modal-dialog -->
+			</div> <!-- /#deposite-modal -->
+
+
+
+			<!-- Withdraw  Modal -->
+			<div class="modal fade wallet-page-modal" id="withdraw-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			  	<div class="modal-dialog" role="document">
+			    	<div class="modal-content">
+				    	<div class="tabs-wrap">
+							<ul class="nav nav-tabs modal-navs-two" id="myTabTwo" role="tablist">
+								<li class="nav-item">
+								  <a class="nav-link active" id="withdraw-panel-tab" data-toggle="tab" href="#withdraw-panel" role="tab" aria-controls="withdraw-panel" aria-selected="true"></a>
+								</li>
+								<li class="nav-item">
+								  <a class="nav-link" id="wallet-pin-tab" data-toggle="tab" href="#wallet-pin" role="tab" aria-controls="wallet-pin" aria-selected="false"></a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContentTwo">
+								<div class="tab-pane fade show active" id="withdraw-panel" role="tabpanel" aria-labelledby="withdraw-panel-tab">
+									<div class="theme-modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>					
+								    </div>
+
+								    <div class="main-container clearfix">
+								    	<div class="details-option">
+								    		<h3 class="main-title tooltip-holder">
+												Withdraw From
+												<button type="button" class="help-button" data-toggle="tooltip" data-placement="top" title="" data-original-title="The amount you want to invest, you can always add funds to your investment at any time."><img src="/static/assets/images/info.png" alt=""></button>
+											</h3>
+								    		<form action="#" class="withdraw-action-form">
+								    			<div class="dropdown withdraw-method-dropdown">
+													<button class="dropdown-toggle withdraw-dropdown-button" data-toggle="dropdown">
+													    <span class="balance-sheet-wrapper selected-currency">
+													    	<span class="withdraw-currency-list clearfix">
+													    		<span class="name font-fix"><img src="/static/assets/images/bitcoin2.png" alt=""> Bitcoin</span>
+																<span class="balance-inquery">
+																	<span class="currency-title">0.0000 BTC</span>
+																	<span class="total-currency">$0.00</span>
+																</span>
+													    	</span>
+													    </span>
+													</button>
+													<div class="dropdown-menu dropdown-menu-right">
+													    <div class="balance-sheet-wrapper">
+															<ul>
+																<li class="bitcoin-method clearfix select-currnecy-list">
+																	<div class="withdraw-currency-list clearfix">
+																		<span class="name font-fix"><img src="/static/assets/images/bitcoin2.png" alt=""> Bitcoin</span>
+																		<span class="balance-inquery">
+																			<span class="currency-title">0.0000 BTC</span>
+																			<span class="total-currency">$0.00</span>
+																		</span>
+																	</div>
+																</li>
+																<li class="ethereum-method clearfix select-currnecy-list">
+																	<div class="withdraw-currency-list clearfix">
+																		<span class="name font-fix"><img src="/static/assets/images/ethereum2.png" alt=""> Ethereum</span>
+																		<span class="balance-inquery">
+																			<span class="currency-title">0.0000 ETC</span>
+																			<span class="total-currency">$0.00</span>
+																		</span>
+																	</div>
+																</li>
+																<li class="litecoin-method clearfix select-currnecy-list">
+																	<div class="withdraw-currency-list clearfix">
+																		<span class="name font-fix"><img src="/static/assets/images/litecoin2.png" alt=""> Litecoin</span>
+																		<span class="balance-inquery">
+																			<span class="currency-title">0.0000 LTC</span>
+																			<span class="total-currency">$0.00</span>
+																		</span>
+																	</div>
+																</li>
+															</ul>
+														</div> <!-- /.balance-sheet-wrapper -->
+													</div>
+												</div> <!-- /.withdraw-method-dropdown -->
+
+												<div class="withdraw-address">
+													<h3 class="main-title tooltip-holder">
+														To Address
+														<button type="button" class="help-button" data-toggle="tooltip" data-placement="top" title="" data-original-title="The amount you want to invest, you can always add funds to your investment at any time."><img src="/static/assets/images/info.png" alt=""></button>
+													</h3>
+													<textarea placeholder="1GvHyD6hfd9Noa5syfDqz4hMaMrjxpexE"></textarea>
+												</div>
+
+												<div class="wallet-amount withdraw-amount">
+													<h3 class="main-title">Amount</h3>
+													<div class="row">
+														<div class="col-sm-6">
+															<div class="input-group-wrapper main-currency">
+																<input type="checkbox" class="cur-check">
+								        						<label for="wdrw-main-cur">
+								        							<span class="currency-icon">$</span>
+									        						<input type="number" value="1000" min="50" id="wdrw-main-cur">
+									        						<span class="currency-name">USD</span>
+								        						</label>
+								        					</div>
+														</div> <!-- /.col- -->
+
+														<div class="col-sm-6">
+															<div class="input-group-wrapper">
+								        						<input type="checkbox" class="cur-check">
+								        						<label for="wdrw-crypto-cur">
+								        							<input type="number" value="0.561335688" min="50" class="cryptocurrency-amount" id="wdrw-crypto-cur">
+								        							<span class="currency-name">BTC</span>
+								        						</label>
+								        					</div>
+														</div>
+													</div> <!-- /.row -->
+												</div> <!-- /.wallet-amount -->
+
+												<a href="#" class="theme-button continue-button-two"><span></span>Withdraw from Bitcoin - $1.000</a>
+								    		</form>
+								    	</div> <!-- /.details-option -->
+
+
+								    	<div class="modal-sidebar">
+								    		<div class="summary-content">
+								    			<h4 class="summary-title font-fix">Withdrawal Summary</h4>
+								    			<div class="crypto-balance font-fix">0.561335688 BTC</div>
+								    			<div class="main-balance font-fix">$1000.00</div>
+
+								    			<ul>
+								    				<li class="list-item">
+								    					<div class="sidebar-title">From</div>
+								    					<div class="value font-fix"><img src="/static/assets/images/bitcoin2.png" alt=""> Bitcoin</div>
+								    				</li>
+								    				<li class="list-item">
+								    					<div class="sidebar-title">To</div>
+								    					<div class="value font-fix">1GvHyD6hfd9Noa5syfDqz4h...</div>
+								    				</li>
+								    				<li class="list-item">
+								    					<div class="sidebar-title">Processing Time</div>
+								    					<div class="value font-fix">Processed in 24 hours</div>
+								    				</li>
+								    			</ul>
+								    			<button type="button" class="help-button" data-toggle="tooltip" data-placement="top" title="" data-original-title="The amount you want to invest, you can always add funds to your investment at any time."><img src="/static/assets/images/help.png" alt="">Withdraw Help</button>
+								    		</div> <!-- /.summary-content -->
+								    	</div> <!-- /.modal-sidebar -->
+								    </div> <!-- /.main-container -->
+								</div> <!-- /.tab-pane -->
+
+								<div class="tab-pane fade" id="wallet-pin" role="tabpanel" aria-labelledby="wallet-pin-tab">
+								    <div class="theme-modal-header">
+								      	<h3 class="title font-fix"><a class="back-button-two"><img src="/static/assets/images/left-arrow.png" alt=""> &nbsp;</a></h3>
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								          <span aria-hidden="true">&times;</span>
+								        </button>
+								    </div>					
+
+								    <div class="modal-body">
+							        	<form action="#" class="withdraw-pin-form">
+							        		<h3 class="title font-fix">Enter your withdraw PIN</h3>
+							        		<input type="tel" placeholder="0000" maxlength="4" class="font-fix">
+							        		<div class="pin-attempt-text">3 attempts left</div>
+							        		<button class="theme-button"><span></span>Confirm</button>
+							        	</form>
+							      	</div> <!-- /.modal-body -->
+								</div> <!-- /.tab-pane -->
+							</div> <!-- /.tab-content -->
+						</div> <!-- /.tabs-wrap -->
+			    	</div> <!-- /.modal-content -->
+			  	</div> <!-- /.modal-dialog -->
+			</div> <!-- /#withdraw-modal -->
